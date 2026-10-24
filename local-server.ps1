@@ -1,5 +1,7 @@
+param([int]$Port = 5173)
+
 $root = (Resolve-Path -LiteralPath $PSScriptRoot).Path
-$listener = [System.Net.Sockets.TcpListener]::new([System.Net.IPAddress]::Loopback, 5173)
+$listener = [System.Net.Sockets.TcpListener]::new([System.Net.IPAddress]::Loopback, $Port)
 $listener.Start()
 $types = @{
   '.html' = 'text/html; charset=utf-8'

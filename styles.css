@@ -5,65 +5,6 @@
 
 
 
-/* Ajustes compactos para conservar las proporciones de la referencia en móvil. */
-@media(max-width:650px){
-  .wrap{width:calc(100% - 8px)}
-  .topbar{height:30px}
-  .logo b{font-size:14px;letter-spacing:-.8px}.logo b span{font-size:12px}.logo small{font-size:4px;letter-spacing:1.5px;margin-top:3px}
-  .menu-toggle{display:none}
-  .topnav{display:flex;position:static;height:auto;width:auto;padding:0;background:transparent;box-shadow:none;z-index:auto;flex-direction:row;align-items:center;gap:5px;font-size:5px;white-space:nowrap}
-  .topnav>a:not(.pay-button){padding:0;border:0;font-size:5px}.pay-button{font-size:5px;padding:5px 5px;margin:0;border-radius:3px}
-  .topnav{top:30px;padding:8px}.topnav>a:not(.pay-button){padding:7px;font-size:9px}.pay-button{font-size:8px;padding:6px 9px;margin-top:5px}
-  .shortcut-inner{height:14px;min-height:14px;justify-content:space-between;gap:4px;overflow:hidden}.shortcut-inner a{font-size:6px;padding:3px 0}
-  .hero{grid-template-columns:1.02fr .98fr;gap:22px;padding:5px 0 12px;min-height:0;align-items:center}
-  .hero-image{height:auto;aspect-ratio:1.34;border-radius:7px}
-  .hero-content h1{font-size:13px;line-height:1.12;letter-spacing:-.2px;margin-bottom:7px}
-  .hero-content h2{font-size:11px;line-height:1.15;margin-bottom:6px}
-  .hero-content p{font-size:6.5px;line-height:1.42;margin-bottom:7px}
-  .hero-buttons{gap:3px}.hero-buttons a{font-size:5.5px;line-height:1.2;padding:5px 6px;border-radius:3px}
-  .image-slot:before{font-size:8px;padding:8px}.image-slot:after{font-size:6px;bottom:4px;left:5px;padding:2px 3px}
-  .data-section{padding:12px 0}
-  .data-row{grid-template-columns:.8fr 1.2fr;gap:7px;align-items:center}
-  .section-intro h2,.independent-intro h2,.administrators h2,.blog-intro h2{font-size:12px;line-height:1.15;margin-bottom:5px}
-  .section-intro p,.independent-intro p,.blog-intro p{font-size:6px;line-height:1.35;margin:0 0 5px}
-  .section-intro .purple-button,.independent-intro .purple-button,.blog-intro .purple-button{font-size:6px;padding:5px 7px;border-radius:3px}
-  .data-options{grid-template-columns:1fr 1fr;gap:5px}
-  .data-options a{min-width:0;gap:4px;padding:6px 5px;font-size:5.5px;border-radius:4px;white-space:nowrap}
-  .option-icon{width:14px;height:14px;font-size:8px;border-radius:3px;flex:none}
-  .data-options b,.pila-links b,.service-grid b{font-size:10px}
-  .benefits{padding:10px 0}
-  .benefits-row{grid-template-columns:1fr auto;gap:7px}
-  .benefits h2{font-size:12px;margin:0 0 5px}
-  .benefits p{font-size:6px;line-height:1.35}
-  .benefit-buttons{flex-direction:column;align-items:flex-end;gap:4px}
-  .benefit-buttons a{font-size:5.5px;padding:5px 7px;border-radius:3px}
-  .independent-section{padding:12px 0 0}
-  .independent-intro{grid-template-columns:1fr 1.2fr;gap:10px;align-items:center}
-  .independent-intro h2{font-size:11px;line-height:1.15}
-  .independent-intro p{font-size:6px;line-height:1.35;margin-bottom:5px}
-  .pila-links{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin-top:10px}
-  .pila-links a{min-width:0;min-height:30px;padding:4px 5px;gap:4px;font-size:5.5px;line-height:1.15;border-radius:4px;white-space:normal}
-  .pila-links a>span{width:14px;height:14px;flex:none;font-size:8px;border-radius:3px}
-  .pila-banner{height:auto;aspect-ratio:6.7;margin-top:2px}
-  .stories{padding:16px 0}
-  .stories>.wrap>h2{font-size:15px;margin-bottom:10px}
-  .video-grid{grid-template-columns:repeat(3,1fr);gap:5px}.video-image{height:auto;aspect-ratio:1.45}
-  .video-grid>a>span{font-size:7px;padding:5px;min-height:0;gap:3px}.video-grid b{font-size:6px}
-  .center-button{margin:8px auto 14px}
-  .review-grid{grid-template-columns:repeat(3,1fr);gap:5px}.review-grid article{min-height:90px;padding:7px}
-  .review-grid article>p{font-size:6px;line-height:1.35;margin-bottom:5px}
-  .review-person{gap:4px}.review-person b{font-size:6px}.review-person small{font-size:5px;margin-top:2px}.avatar{width:22px;height:22px}.avatar:before{font-size:6px}
-  .signup-button{margin-top:9px}
-  .audience,.audience-company{min-height:0}.audience-row,.audience-company .audience-row{min-height:0;grid-template-columns:1fr 1fr;gap:8px;padding:14px 0}
-  .audience-copy h2{font-size:14px;margin-bottom:6px}.audience-copy p{font-size:6px;line-height:1.4;margin-bottom:6px}.audience-copy .purple-button{font-size:6px;padding:5px 7px}
-  .service-grid{grid-template-columns:1fr 1fr;gap:4px}.service-grid a{min-height:24px;padding:5px;font-size:6px;line-height:1.2}
-  .administrators{padding:16px 0}.administrators h2{font-size:13px}.administrators p{font-size:6px;line-height:1.4;margin-bottom:7px}.administrators .purple-button{font-size:6px;padding:5px 7px}
-  .blog-section{padding:14px 0}.blog-row{grid-template-columns:.7fr 1.3fr;gap:8px}.blog-intro h2{font-size:13px}.blog-intro p{font-size:6px}.blog-intro .purple-button{font-size:6px;padding:5px 7px}
-  .blog-cards{grid-template-columns:1fr 1fr;gap:5px}.blog-image{height:auto;aspect-ratio:1.2}.blog-cards>a{padding-bottom:5px}.blog-cards h3{font-size:7px;line-height:1.25;margin:5px 4px 3px}.blog-cards p{font-size:6px;line-height:1.3;margin:0 4px}
-  .register-section{min-height:0}.register-row{min-height:0;grid-template-columns:1fr auto;gap:8px;padding:14px 0}.register-row>div{max-width:100%}.register-row h2{font-size:14px;margin-bottom:6px}.register-row p{font-size:6px;line-height:1.4}.register-row .yellow-button{font-size:6px;padding:6px 8px}
-  .footer-main{grid-template-columns:1fr 1fr;gap:12px 8px;padding:14px 0}.footer-logo b{font-size:14px}.footer-brand p{font-size:6px}.socials{gap:7px}.socials a{font-size:7px}.footer-column{font-size:6px;gap:4px}.footer-column h3{font-size:7px;margin-bottom:2px}.legal{font-size:5.5px;padding:6px 0 7px;line-height:1.6}
-}
-
 /* Franja Pymes: proporciones, foto e iconos originales de Enlace. */
 .audience-pyme{min-height:235px}
 .audience-pyme .audience-row{width:min(1180px,calc(100% - 64px));min-height:235px;grid-template-columns:1.02fr .98fr;gap:34px;padding:18px 0}
@@ -76,7 +17,6 @@
 .audience-pyme .service-grid a>img.enlace__icon{width:32px;height:32px;flex:none}
 .audience-pyme .enlace__text{flex:1;text-align:center}
 .audience-pyme .service-grid b{display:none}
-@media(max-width:650px){.audience-pyme{min-height:0}.audience-pyme .audience-row{width:calc(100% - 8px);min-height:0;grid-template-columns:1fr 1fr;gap:8px;padding:14px 0}.audience-pyme .audience-copy h2{font-size:14px;margin-bottom:6px}.audience-pyme .audience-copy p{font-size:6px;line-height:1.4;margin-bottom:6px}.audience-pyme .audience-copy .purple-button{font-size:6px;padding:5px 7px}.audience-pyme .service-grid{gap:4px}.audience-pyme .service-grid a{height:30px;min-height:30px;padding:3px 4px;gap:3px;font-size:5.5px}.audience-pyme .service-grid a>img.enlace__image{width:14px;height:14px}.audience-pyme .service-grid a>img.enlace__icon{width:12px;height:12px}}
 .audience-pyme .audience-background{background:#555 url("assets/images/fondo-pymes.jpg") center center/cover no-repeat}
 .audience-pyme .audience-background:before,.audience-pyme .audience-background:after{display:none}
 /* Franja Empresas: foto original, rejilla e iconos de la referencia. */
@@ -93,7 +33,6 @@
 .audience-company .service-grid b{display:none}
 .audience-company .audience-background{background:#555 url("assets/images/fondo-empresas.jpg") center center/cover no-repeat}
 .audience-company .audience-background:before,.audience-company .audience-background:after{display:none}
-@media(max-width:650px){.audience-company{min-height:0}.audience-company .audience-row{width:calc(100% - 8px);min-height:0;grid-template-columns:1fr 1fr;gap:8px;padding:14px 0}.audience-company .audience-copy h2{font-size:14px;margin-bottom:6px}.audience-company .audience-copy p{font-size:6px;line-height:1.4;margin-bottom:6px}.audience-company .audience-copy .purple-button{font-size:6px;padding:5px 7px}.audience-company .service-grid{gap:4px;margin-top:0}.audience-company .service-grid a{height:30px;min-height:30px;padding:3px 4px;gap:3px;font-size:5.5px}.audience-company .service-grid a>img.enlace__image{width:14px;height:14px}.audience-company .service-grid a>img.enlace__icon{width:12px;height:12px}}
 
 /* Registro: composición ajustada a la referencia de escritorio. */
 .register-section{min-height:206px;background:linear-gradient(90deg,#211f1ed1 0%,#211f1e99 54%,#211f1e72 100%),linear-gradient(120deg,#564d45,#706251)}
@@ -103,7 +42,6 @@
 .register-row h2{font-size:26px;line-height:1.08;margin-bottom:14px}
 .register-row p{font-size:12px;line-height:1.5;max-width:310px}
 .register-row .yellow-button{justify-self:start;border-radius:10px;padding:10px 17px;font-size:12px;font-weight:500}
-@media(max-width:650px){.register-row{width:calc(100% - 8px);grid-template-columns:1fr auto;gap:8px;min-height:0}.register-row h2{font-size:14px;line-height:1.15;margin-bottom:6px}.register-row p{font-size:6px;line-height:1.4}.register-row .yellow-button{font-size:6px;padding:6px 8px;border-radius:5px}}
 
 /* Ajustes de la referencia compartida y navegación manual del banner. */
 .hero-image{isolation:isolate}
@@ -186,5 +124,83 @@
   .header{position:sticky;top:0;z-index:30;background:#fff}
   .shortcut-nav{position:sticky;top:30px;z-index:29}
 }
+
+/* Keep the desktop composition proportional on wide screens. The reference
+   layout is 83.2% wide at 962px, so retain that ratio instead of capping every
+   section at 1180px and making the page look undersized at 100% zoom. */
+@media(min-width:1200px){
+  .wrap{width:83.2%;max-width:none}
+  .topbar{width:85.5%;max-width:none}
+  .hero{width:83.2%;max-width:none;min-height:clamp(325px,33.8vw,650px);gap:5.8%;padding-top:clamp(11px,1.15vw,22px);padding-bottom:clamp(28px,2.9vw,56px)}
+  .hero-content{padding-top:clamp(12px,1.25vw,24px)}
+  .hero-image{border-radius:clamp(20px,2.1vw,36px)}
+  .shortcut-nav{margin-top:clamp(25px,2.6vw,48px)}
+  .shortcut-inner{width:72.8%;max-width:none;height:clamp(28px,2.9vw,48px);min-height:clamp(28px,2.9vw,48px)}
+  .data-section{padding:clamp(59px,6.1vw,100px) 0}
+  .data-row{grid-template-columns:minmax(0,32%) minmax(0,1fr);gap:5.5%}
+  .data-options{gap:clamp(20px,2vw,32px)}
+  .data-options a{min-height:clamp(60px,6.2vw,92px);padding:clamp(14px,1.45vw,22px);gap:clamp(13px,1.35vw,20px)}
+  .option-icon{width:clamp(29px,3vw,44px);height:clamp(29px,3vw,44px)}
+  .benefits{padding:clamp(35px,3.65vw,58px) 0}
+  .benefits-row{gap:5.2%}
+  .independent-section{padding:clamp(46px,4.8vw,76px) 0 clamp(38px,4vw,64px)}
+  .independent-intro{grid-template-columns:minmax(0,38%) minmax(0,1fr);gap:6.2%}
+  .independent-intro h2{max-width:100%}
+  .pila-links{gap:clamp(11px,1.15vw,18px);margin-top:clamp(32px,3.3vw,52px)}
+  .pila-links a{min-height:clamp(64px,6.65vw,96px);padding:clamp(12px,1.25vw,20px)}
+  .pila-links a>.pila-icon,.pila-icon img,.pila-icon svg{width:clamp(42px,4.4vw,64px);height:clamp(42px,4.4vw,64px)}
+  .pila-links a>.pila-label{width:clamp(112px,11.65vw,170px)}
+  .pila-banner{height:clamp(118px,12.25vw,188px);margin-top:clamp(12px,1.25vw,20px)}
+  .stories{padding:clamp(38px,4vw,64px) 0 clamp(32px,3.35vw,54px)}
+  .video-grid{gap:clamp(14px,1.45vw,23px)}
+  .video-image{height:auto;aspect-ratio:1.8}
+  .review-grid{gap:clamp(15px,1.55vw,24px)}
+  .audience-row{gap:5.2%;min-height:clamp(295px,30.7vw,480px);padding-top:clamp(26px,2.7vw,42px);padding-bottom:clamp(26px,2.7vw,42px)}
+  .audience,.audience-company{min-height:clamp(295px,30.7vw,480px)}
+  .audience-company .audience-row{min-height:clamp(330px,34.3vw,520px)}
+  .blog-section{padding:clamp(50px,5.2vw,82px) 0}
+  .blog-row{grid-template-columns:minmax(0,32%) minmax(0,1fr);gap:5.2%}
+  .blog-cards{gap:clamp(15px,1.55vw,24px)}
+  .blog-image{height:auto;aspect-ratio:1.55}
+  .register-row{min-height:clamp(240px,25vw,390px);gap:4.2%}
+  .register-section{min-height:clamp(240px,25vw,390px)}
+  .footer-main{gap:5.2%;padding-top:clamp(31px,3.2vw,50px);padding-bottom:clamp(31px,3.2vw,50px)}
+}
 @media(min-width:901px){.header-logo{width:90px;height:28px}.header-logo img{width:90px;height:28px;object-fit:contain}.footer-logo{display:block;width:120px;line-height:normal}.footer-logo img{display:block;width:100%;height:auto}}
 @media(max-width:900px){.footer-logo{display:block;width:100px;line-height:normal}.footer-logo img{display:block;width:100%;height:auto}}
+
+/* Typography and layout scale smoothly with desktop viewport width. */
+@media(min-width:901px){
+  .topnav{font-size:clamp(11px,.84vw,14px);gap:clamp(18px,1.55vw,28px)}
+  .topnav .pay-button{font-size:clamp(11px,.82vw,13px);padding:clamp(9px,.7vw,12px) clamp(16px,1.15vw,22px)}
+  .hero-content h1{font-size:clamp(27px,2.35vw,38px);max-width:clamp(390px,34vw,560px)}
+  .hero-content h2{font-size:clamp(22px,1.8vw,30px)}
+  .hero-content p{font-size:clamp(11px,.96vw,15px);max-width:clamp(390px,34vw,560px)}
+  .hero-buttons{max-width:clamp(390px,34vw,560px)}
+  .hero-buttons a{font-size:clamp(11px,.88vw,13px);padding:clamp(9px,.7vw,12px) clamp(15px,1.1vw,21px)}
+  .shortcut-inner a{font-size:clamp(11px,.82vw,13px)}
+  .section-intro h2,.independent-intro h2{font-size:clamp(26px,2vw,34px)}
+  .section-intro p,.independent-intro p,.benefits p,.audience-copy p,.administrators p,.blog-intro p{font-size:clamp(12px,.98vw,15px)}
+  .benefits h2,.stories>.wrap>h2{font-size:clamp(27px,2.15vw,36px)}
+  .data-options a,.pila-links a,.service-grid a{font-size:clamp(12px,.9vw,14px)}
+  .pila-links a>.pila-label{font-size:clamp(12px,.9vw,14px)}
+  .video-grid>a>span,.review-grid article>p{font-size:clamp(12px,.92vw,14px)}
+  .audience-copy h2,.administrators h2,.blog-intro h2{font-size:clamp(28px,2.2vw,36px)}
+  .blog-cards h3{font-size:clamp(15px,1.12vw,18px)}
+  .blog-cards p{font-size:clamp(11px,.88vw,14px)}
+  .register-row h2{font-size:clamp(26px,1.9vw,32px)}
+  .register-row p{font-size:clamp(12px,.95vw,15px)}
+  .footer-column,.footer-brand p{font-size:clamp(11px,.85vw,13px)}
+  .legal{font-size:clamp(10px,.75vw,12px)}
+}
+@media(max-width:650px){
+  .audience-pyme,.audience-company{min-height:0}
+  .audience-pyme .audience-row,.audience-company .audience-row{width:calc(100% - 28px);min-height:0;grid-template-columns:1fr;gap:18px;padding:28px 0}
+  .audience-pyme .audience-copy h2,.audience-company .audience-copy h2{font-size:24px;margin-bottom:9px}
+  .audience-pyme .audience-copy p,.audience-company .audience-copy p{font-size:12px;line-height:1.5;margin-bottom:12px}
+  .audience-pyme .audience-copy .purple-button,.audience-company .audience-copy .purple-button{font-size:11px;padding:9px 13px}
+  .audience-pyme .service-grid,.audience-company .service-grid{gap:8px;margin-top:0}
+  .audience-pyme .service-grid a,.audience-company .service-grid a{height:auto;min-height:48px;padding:8px;gap:6px;font-size:11px;line-height:1.25}
+  .audience-pyme .service-grid a>img.enlace__image,.audience-company .service-grid a>img.enlace__image{width:28px;height:28px}
+  .audience-pyme .service-grid a>img.enlace__icon,.audience-company .service-grid a>img.enlace__icon{width:20px;height:20px}
+}
