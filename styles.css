@@ -245,3 +245,21 @@
   .topnav .pay-button{font-size:calc(clamp(11px,.82vw,13px) * 1.2)}
   .register-row .yellow-button{font-size:13.2px}
 }
+
+/* Ajuste del primer pantallazo para igualar la escala del sitio de referencia. */
+@media(min-width:1200px){
+  .brand-strip{display:block;height:42px;background:#f4f5f6;border-bottom:1px solid #e2e3e5}
+  .brand-strip-inner{width:88.8%;height:100%;margin:0 auto;display:flex;align-items:center;justify-content:flex-end;gap:8px}
+  .brand-strip-inner span{font-size:9px;color:#102583}
+  .brand-strip-inner img{display:block;width:60px;height:32px;object-fit:contain}
+  .topbar{width:88.8%;max-width:none;height:62px}
+  .header-logo{width:180px;height:56px}
+  .header-logo img{width:180px;height:56px;object-fit:contain}
+  .topnav{gap:clamp(32px,3.2vw,44px)}
+  .shortcut-nav{top:104px;margin-top:14px}
+  .hero{width:89%;max-width:none;min-height:0;padding-top:19px;padding-bottom:0}
+  .hero-image{aspect-ratio:1.335}
+  .hero-content h1,.hero-content p{max-width:none}
+  .hero-buttons{max-width:none}
+}
+@media(max-width:1199px){.brand-strip{display:none}}
