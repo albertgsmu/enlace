@@ -16,10 +16,32 @@ topNav?.querySelectorAll('a').forEach((link) => {
 });
 
 document.querySelectorAll('.image-slot[data-image]').forEach((slot) => {
-  const image = new Image();
+  const image = slot.querySelector('img') || new Image();
   image.alt = slot.dataset.label || '';
-  image.loading = slot.classList.contains('hero-image') ? 'eager' : 'lazy';
+  image.loading = slot.classList.contains('hero-image') || slot.classList.contains('pila-banner') ? 'eager' : 'lazy';
   image.onload = () => slot.classList.add('loaded');
-  image.src = `assets/images/${slot.dataset.image}`;
-  slot.append(image);
+  if (!image.getAttribute('src')) {
+    image.src = `assets/images/${slot.dataset.image}`;
+    slot.append(image);
+  } else if (image.complete && image.naturalWidth > 0) {
+    slot.classList.add('loaded');
+  }
 });
+
+const heroBanner = document.querySelector('.hero-image');
+if (heroBanner) {
+  const bannerImage = heroBanner.querySelector('img');
+  const photos = Array.from({ length: 8 }, (_, index) => `B_P${index + 1}.jpg`);
+  let currentPhoto = 0;
+
+  const showPhoto = (index) => {
+    currentPhoto = (index + photos.length) % photos.length;
+    const file = photos[currentPhoto];
+    heroBanner.dataset.image = file;
+    bannerImage.src = `assets/images/${file}`;
+    bannerImage.alt = 'Banner principal Enlace Operativo';
+  };
+
+  heroBanner.querySelector('.carousel-arrow--previous').addEventListener('click', () => showPhoto(currentPhoto - 1));
+  heroBanner.querySelector('.carousel-arrow--next').addEventListener('click', () => showPhoto(currentPhoto + 1));
+}
