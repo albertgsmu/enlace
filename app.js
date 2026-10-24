@@ -1,6 +1,22 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const topNav = document.querySelector('.topnav');
 
+const whatsappMessage = 'Hola! Buen día. Quisiera solicitar asesoría para realizar el pago de mi planilla como independiente.';
+const whatsappHref = `https://wa.me/573118686861?${new URLSearchParams({ text: whatsappMessage })}`;
+const whatsappLinks = [
+  ...document.querySelectorAll('.topnav > a[href="#independientes"], .topnav > .pay-button, .hero-buttons a, .independent-intro .purple-button, .audience-pyme .service-grid a, .audience-company .service-grid a, .contact-widget__round, .contact-widget__whatsapp, .pila-banner__whatsapp'),
+  ...Array.from(document.querySelectorAll('.pila-links a')).filter((link) => {
+    const label = link.querySelector('.pila-label')?.textContent.toLowerCase().replace(/[^a-z]/g, '');
+    return ['pila', 'consultatupin', 'planillaasistida', 'puntosdepagoasistida'].includes(label);
+  }),
+];
+
+whatsappLinks.forEach((link) => {
+  link.href = whatsappHref;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+});
+
 menuToggle?.addEventListener('click', () => {
   const isOpen = topNav.classList.toggle('open');
   menuToggle.setAttribute('aria-expanded', String(isOpen));
